@@ -19,6 +19,10 @@ a {
     color:#6415ff;
 }
 
+.container {
+    padding: 80px 0;
+}
+
 /* Landing Page */
 
 .landing{
@@ -40,7 +44,7 @@ a {
 .nav__logo {
     display: flex;
     align-items: center;
-    margin: 8px 0;
+    margin: 16px;
     width: 100px;
 
 }
@@ -101,6 +105,11 @@ a {
 }
 .header--description {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .header__img {
@@ -122,7 +131,7 @@ a {
     width: 100%;
     border-radius: 500px;
     border: 2px solid rgb(229, 231, 235);
-    padding: 20px 192px 20px 32px;
+    padding: 20px 32px 20px 32px;
     color: rgb(36, 62, 99);
     font-size: 16px;
     font-weight: 500;
@@ -168,4 +177,34 @@ a {
     margin-top: 16px;
     padding-right: 128px;
     opacity: 0.5;
+}
+
+/* Features */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature__text {
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.feature__title {
+
+}
+
+.feature__img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
 }
