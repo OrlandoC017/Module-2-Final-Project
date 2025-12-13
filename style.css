@@ -188,13 +188,21 @@ a {
     align-items: center;
 }
 
+.feature__row {
+    display: flex;
+    align-items: flex-start;
+}
+
 .feature__text {
     margin-top: 8px;
     margin-left: 16px;
+    max-width: calc(100%/3);
 }
 
-.feature__title {
-
+.feautures--list{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .feature__img {
