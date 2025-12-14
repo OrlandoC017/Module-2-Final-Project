@@ -30,6 +30,12 @@ a {
     border: none;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Landing Page */
 
 .landing{
@@ -565,4 +571,50 @@ a {
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__columns {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    color: white
+}
+
+.footer__column--link {
+    color: white;
+    margin-top: 24px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column--link:hover {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    transition: all 300ms ease;
+    opacity: 0;
+}
+
+.footer__column--link:hover:after {
+    opacity: 1;
+}
+
+
+
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(115, 61, 224);
 }
