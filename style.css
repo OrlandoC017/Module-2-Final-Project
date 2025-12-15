@@ -67,6 +67,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     margin: 20px auto;
+    align-items: center;
 }
 
 .nav__logo {
@@ -127,7 +128,6 @@ html, body {
     opacity: 0;
 }
 
-.nav__link--action
 
 .button__nav--links {
     display: none;
@@ -165,6 +165,10 @@ html, body {
     flex-direction: column;
     align-items: start;
 
+}
+
+.mobile__button {
+    display: none;
 }
 
 .header__img {
@@ -770,17 +774,18 @@ html, body {
 /* Media Queries */
 
 @media(max-width: 1024px) {
-    .row {
+    .header {
         flex-direction: column;
+        justify-content: center;
     }
 
     .nav__links {
         display: none;
     }
 
-    .nav__row {
+     {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
     }
 
     .header--description {
@@ -804,5 +809,46 @@ html, body {
 
     .button__nav--links {
         display: block;
+    }
+
+    .mobile__button {
+    display:block;
+    margin-top: 10px;
+    width: 90%;
+    background-color: #6415ff;
+    color: white;
+    height: 50px;
+    border-radius: 500px;
+    font-weight: 700;
+    font-size: 16px;
+    }
+
+    .header__email--button {
+        display: none;
+        
+    }
+
+    .header__email--input {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .header__img {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .features {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features__list {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
