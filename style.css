@@ -960,19 +960,19 @@ html, body {
 
     .footer__row {justify-content: center; flex-wrap: wrap;}
 
-    .footer__columns {width: auto;
+    .footer__columns {
+        width: auto;
         text-align: center;
         align-items: center;
         width: 70px;
         margin: 0px 15px;
+    }
 
     .footer__column--title {font-size: 16px;}
     
     .footer__logo {align-items: center;}
 
     .footer__bottom {display: flex; flex-direction: column;}
-
-    
 
 }
 
