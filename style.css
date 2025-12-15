@@ -129,6 +129,10 @@ html, body {
 
 .nav__link--action
 
+.button__nav--links {
+    display: none;
+}
+
 .nav__link--login {
     margin: 0 32px ;
 }
@@ -765,9 +769,18 @@ html, body {
 
 /* Media Queries */
 
-@media(max-width: 728px) {
+@media(max-width: 1024px) {
     .row {
         flex-direction: column;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .nav__row {
+        display: flex;
+        justify-content: space-between
     }
 
     .header--description {
@@ -787,5 +800,9 @@ html, body {
 
     .header--customers__logos {
         padding: 0;
+    }
+
+    .button__nav--links {
+        display: block;
     }
 }
