@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact Orlando Castillo</title>
     <link rel="stylesheet" href="style.css">
+
     <script src="https://kit.fontawesome.com/83fe22388f.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,13 +27,26 @@
             <a href="#" class="nav__link nav__link--login">Login</a>
             <a href="#" class="nav__link--action">Sign Up</a>
         </div>
-        <div class="button__nav--links">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+
+        <div class="nav__off-screen-menu">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link nav__link--login">Login</a>
+            <a href="#" class="nav__link--action">Sign Up</a>
         </div>
+
+        <div class="ham-menu">
+            <div class="button__nav--links" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+
 
     </div>
 
@@ -387,6 +401,7 @@
 
 <div class="row footer__row">
 
+    <div class="footer__columns--wrapper">
     <div class="footer__columns">
         <h2 class="footer__column--title">MAIN</h2>
         <a href="" class="footer__column--link">Blog</a>
@@ -425,6 +440,7 @@
         <a href="" class="footer__column--link">Privacy Policy</a>
         <a href="" class="footer__column--link">Terms of Service</a>
         <a href="" class="footer__column--link">Disclaimer</a>
+    </div>
     </div>        
 
 </div>
@@ -467,7 +483,7 @@
 
 
 
-  
+<script src="/main.js"></script>
 
 </body>
 </html>

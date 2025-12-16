@@ -149,6 +149,25 @@ html, body {
     background-color: darkmagenta;
 }
 
+.nav__off-screen-menu {
+    background-color: #718096;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+}
+
+.nav__off-screen-menu:active{
+    right: 0;
+}
+
 /* Header */
 
 
@@ -678,6 +697,13 @@ html, body {
     color: white
 }
 
+.footer__columns--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%; 
+}
+
 .footer__column--link {
     color: white;
     margin-top: 24px;
@@ -784,6 +810,8 @@ html, body {
         display: none;
     }
 
+    .nav__row {justify-content: space-between;}
+
 
     .header--description {
         display: flex;
@@ -806,6 +834,7 @@ html, body {
 
     .button__nav--links {
         display: block;
+        margin-right: 50px;
     }
 
     .mobile__button {
