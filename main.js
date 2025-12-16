@@ -1,5 +1,3 @@
-
-
 const hamMenu = document.querySelector('.ham-menu');
 const offScreenMenu = document.querySelector('.nav__off-screen-menu');
 const menuOverlay = document.querySelector('.menu-overlay');
